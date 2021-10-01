@@ -37,12 +37,6 @@ changedict = {}
 for i in range(end):
     changedict[Months[i+1]] = change[i]
 
-#print(changedict)
-
-#print(change)
-#print (max(change))
-#print (min(change))
-
 TotalMonths = str(len(Months))
 TotalSum = str(sum(Total))
 AvgChng = (Total[len(Total)-1]-Total[0])/(len(Total)-1)
@@ -57,7 +51,7 @@ maxwithmonth = changedictmax[0] + ' ($' + str(changedictmax[1]) + ')'
 minwithmonth = changedictmin[0] + ' ($' + str(changedictmin[1]) + ')'
 
 #print to terminal
-print('Financial Analysis' + '\n----------------------------','\nTotal Months: ' + TotalMonths,'\nTotal: $' + TotalSum,'\nAverage  Change: $' + AvgChngRnd,'\nGreatest Increase in Profits: ' + maxwithmonth,'\nGreatest Decrease in Profits: ' + minwithmonth)
+print(f'Financial Analysis \n---------------------------- \nTotal Months: {TotalMonths} \nTotal: ${TotalSum} \nAverage Change: ${AvgChngRnd} \nGreatest Increase in Profits: {maxwithmonth} \nGreatest Decrease in Profits: {minwithmonth}')
 
 #print to .text file
 f = open(printpath,"w")
