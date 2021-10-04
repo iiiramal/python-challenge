@@ -4,8 +4,8 @@ import csv
 
 #Declare CSV Path
 #csvpath = os.path.join('/Users','alamar','Desktop','GitHub', 'Python Challenge', 'PyBank','Resources','budget_data.csv')
-csvpath = os.path.join('Resources','budget_data.csv')
-printpath = os.path.join('Analysis','BankAnalysis.text')
+csvpath = os.path.join(os.getcwd(),'Resources','budget_data.csv')
+printpath = os.path.join(os.getcwd(),'Analysis','BankAnalysis.text')
 
 with open(csvpath) as csvfile:
 

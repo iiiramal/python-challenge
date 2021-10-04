@@ -4,9 +4,9 @@ import os
 import csv
 
 #Declare CVS Path
-csvpath = os.path.join('Resources','election_data.csv')
-printpath = os.path.join('Analysis','PollAnalysis.text')
-print(csvpath)
+csvpath = os.path.join(os.getcwd(),'Resources','election_data.csv')
+printpath = os.path.join(os.getcwd(),'Analysis','PollAnalysis.text')
+
 with open(csvpath) as csvfile:
 
     # CSV reader specifies delimiter and variable that holds contents
