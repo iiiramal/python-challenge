@@ -4,8 +4,8 @@ import os
 import csv
 
 #Declare CVS Path
-csvpath = os.path.join(os.getcwd(),'PyPoll','Resources','election_data.csv')
-printpath = os.path.join(os.getcwd(),'PyPoll','Analysis','PollAnalysis.text')
+csvpath = os.path.join(os.getcwd(),'Python Challenge', 'PyPoll','Resources','election_data.csv')
+printpath = os.path.join(os.getcwd(),'Python Challenge','PyPoll','Analysis','PollAnalysis.text')
 
 with open(csvpath) as csvfile:
 
